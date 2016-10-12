@@ -58,19 +58,19 @@ h2, h3, h4, h5 {
 	line-height: 1.6;
 }
 
-legend{
+.form legend{
 	font-family: "eveleth-thin";
 	line-height: 1.5;
 	color: white;
 }
 
-p{
+.form p{
 	font-family: "eveleth-thin";
 	line-height: 0.8;
 	color: white;
 }
 
-article{
+.form article{
 	font-family: "eveleth-thin";
 	line-height: 0.4;
 	color: white;

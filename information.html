@@ -11,6 +11,16 @@
 <body>
 <header>
 	<div class="container-fluid">
+		 <div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#">SCHEDULE</a>
+		    <a href="#">MESSAGES</a>
+		    <a href="#">QR CODES</a>
+		    <a href="#">FYI</a>
+		    <a href="#" class="call">CALL SECURITY</a>
+		  </div>
+		</div>
 		<div id="logo" class="col-xs-2"><img src="images/tinderbox_logowhite_small.svg" alt="logo"></div>
 		<div id="user" class="glyphicon glyphicon-user"></div>
 	</div>
@@ -37,14 +47,14 @@
 				<li>You are a part of getting the wheels to go around.</li>
 				<li>As a volunteer, you have actively agreed to perform with a personal commitment, where you first and foremost must have fun, but also to deliver across Tinderbox, your team, your team leader and your area. You have to be responsible.</li>
 				<li>Learn about our Terms & Conditions, please read our FAQ and be prepared before you show up for your first shift.</li>
-				<li>FAQ: <a href="www.tinderbox.dk/en/volunteers/faq">www.tinderbox.dk/en/volunteers/faq</a></li>
-				<li>To be a volunteer: <a href="www.tinderbox.dk/en/volunteers/voluntariness-at-tinderbox">www.tinderbox.dk/en/volunteers/voluntariness-at-tinderbox</a></li>
+				<li>FAQ: <a href="http://www.tinderbox.dk/en/volunteers/faq">www.tinderbox.dk/en/volunteers/faq</a></li>
+				<li>To be a volunteer: <a href="http://www.tinderbox.dk/en/volunteers/voluntariness-at-tinderbox">www.tinderbox.dk/en/volunteers/voluntariness-at-tinderbox</a></li>
 			</ul>
 
 			<h2>Rules of engagemenet</h2>
 			<ul>
 				<li>By signing up you agreed of our rules of engagement.</li>
-				<li>If you forgot them or just want to read them again, they are available here: <a href="www.tinderbox.dk/en/volunteers/rules-of-engagement">www.tinderbox.dk/en/volunteers/rules-of-engagement</a></li>
+				<li>If you forgot them or just want to read them again, they are available here: <a href="http://www.tinderbox.dk/en/volunteers/rules-of-engagement">www.tinderbox.dk/en/volunteers/rules-of-engagement</a></li>
 			</ul>
 
 			<h2>Deadline for deregistration</h2>
@@ -67,7 +77,7 @@
 			<h2>Valuables</h2>
 			<ul>
 				<li>Valuables brought to Tinderbox are at your own risk, and our insurance does not cover damages or loss.</li>
-				<li>Read more here: <a href="www.tinderbox.dk/en/info">www.tinderbox.dk/en/info</a></li>
+				<li>Read more here: <a href="http://www.tinderbox.dk/en/info">www.tinderbox.dk/en/info</a></li>
 			</ul>
 
 			<h2>Clothing</h2>
@@ -201,7 +211,28 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
+
+<script type="text/javascript"> 
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (event.target.matches('.dropdown')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script type="text/javascript">
 $( document ).ready(function() {
 	$("#toc").append('<h2>Table of contents</h2><ul></ul>');
 	$("h2").each(function(i) {

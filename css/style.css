@@ -255,7 +255,14 @@ background-size: 30px 30px;
   border-radius: 12px
 }
 
+#info h2 {
+    padding-top: 50px;
+    margin-top: -30px;
+}
 
+#info .hours-table {
+  width: 250px;
+}
 
 
 /* Icons ---------------------------------- */

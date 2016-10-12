@@ -58,6 +58,24 @@ h2, h3, h4, h5 {
 	line-height: 1.6;
 }
 
+legend{
+	font-family: "eveleth-thin";
+	line-height: 1.5;
+	color: white;
+}
+
+p{
+	font-family: "eveleth-thin";
+	line-height: 0.8;
+	color: white;
+}
+
+article{
+	font-family: "eveleth-thin";
+	line-height: 0.4;
+	color: white;
+}
+
 #logo {
 	float: left;
 	height: 50px;
@@ -154,6 +172,8 @@ h2, h3, h4, h5 {
   margin-left: -260px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+
+
 }
 
 .feedback-input {
@@ -187,6 +207,19 @@ h2, h3, h4, h5 {
   color: #8bc7b9;
   border: #8bc7b9 solid 3px;
 }
+
+#profile-form{
+
+background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: #fbfbfb solid 2px;
+  border-radius: 12px
+}
+
+
+
 
 /* Icons ---------------------------------- */
 #email{

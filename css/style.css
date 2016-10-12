@@ -1,9 +1,12 @@
 body {
 	background-color: #fff9f4;
 	width: 100%;
-	overflow-y: hidden;
+  height: 100%;
+	overflow-x: hidden;
 	font-family: "avenir", "arial", sans-serif;
 	font-size: 14px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 @font-face {
   font-family: "eveleth-regular";
@@ -25,12 +28,16 @@ header {
 	width: 100%;
 	height: 50px;
 	background-color: #043540;
+  position: fixed;
 }
 footer {
+  position: relative;
+  background-color: #043540;
+  color: #fff9f4;
+}
+.footer {
 	width: 100%;
 	height: 80px;
-	background-color: #043540;
-	color: #fff9f4;
 	position: absolute;
 	bottom: 0;
 }

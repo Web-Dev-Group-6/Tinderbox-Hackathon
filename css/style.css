@@ -74,7 +74,7 @@ select {
 
 .form p{
 	font-family: "eveleth-thin";
-	line-height: 0.8;
+	line-height: 1.2;
 	color: white;
 }
 
@@ -246,18 +246,14 @@ button {
 }
 
 #profile-form{
-
-background-size: 30px 30px;
+  width: 160px;
+  background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
   background-color: white;
   border: #fbfbfb solid 2px;
   border-radius: 12px
 }
-
-
-
-
 /* Icons ---------------------------------- */
 #email{
   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);

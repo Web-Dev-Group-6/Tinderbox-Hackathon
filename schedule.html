@@ -14,7 +14,7 @@
 <header>
 	<div class="container-fluid">
 		<div id="logo" class="col-xs-2"><img src="images/tinderbox_logowhite_small.svg" alt="logo"></div>
-		<div id="user" class="glyphicon glyphicon-user"></div>
+		<a href="profile.html"><div id="user" class="glyphicon glyphicon-user"></div></a>
 	</div>
 </header>
 
@@ -32,7 +32,7 @@
               <a href="security.html" class="call">CALL SECURITY</a>
             </div>
         </div>
-        <button class="backbutton">Back</button>
+        <button id="back-link" class="backbutton">Back</button>
       </div>
       <div class="col-xs-8 nopadding headline">
         <h1>Your Schedule</h1>
@@ -114,6 +114,39 @@
       </div>
     </div>
   </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+<script type="text/javascript"> 
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (event.target.matches('.dropdown')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  $("#toc").append('<h2>Table of contents</h2><ul></ul>');
+  $("h2").each(function(i) {
+      var current = $(this);
+      current.attr("id", "title" + i);
+      $("#toc ul").append("<li><a id='link" + i + "' href='#title" +
+          i + "' title='" + current.attr("tagName") + "'>" + 
+          current.html() + "</a></li>");
+  });
+});
+</script>
 </body> 
 </html>

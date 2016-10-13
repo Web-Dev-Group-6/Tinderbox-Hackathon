@@ -11,7 +11,7 @@
 <header>
 	<div class="container-fluid">
 		<a href="menu.html"><div id="logo" class="col-xs-2"><img src="images/tinderbox_logowhite_small.svg" alt="logo"></div></a>
-		<a href="profile.html"<div id="user" class="glyphicon glyphicon-user"></div></a>
+		<a href="profile.html"><div id="user" class="glyphicon glyphicon-user"></div></a>
 	</div>
 </header>
 
@@ -29,7 +29,6 @@
 			    		<a href="security.html" class="call">CALL SECURITY</a>
 			  		</div>
 				</div>
-				<button class="backbutton">Back</button>
 			</div>
 			<div class="col-xs-8 nopadding headline">
 				<h1>Tinderbox Volunteer</h1>
@@ -120,19 +119,6 @@ window.onclick = function(event) {
     }
   }
 }
-</script>
-
-<script type="text/javascript">
-$( document ).ready(function() {
-	$("#toc").append('<h2>Table of contents</h2><ul></ul>');
-	$("h2").each(function(i) {
-	    var current = $(this);
-	    current.attr("id", "title" + i);
-	    $("#toc ul").append("<li><a id='link" + i + "' href='#title" +
-	        i + "' title='" + current.attr("tagName") + "'>" + 
-	        current.html() + "</a></li>");
-	});
-});
 </script>
 
 </body>

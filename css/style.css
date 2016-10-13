@@ -689,3 +689,7 @@ input:focus, textarea:focus {
   font-family: "eveleth-thin";
   font-size: 14px;
 }
+
+.newsfeed {
+  padding-top: 20px;
+}

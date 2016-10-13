@@ -44,12 +44,11 @@
 		</div>
 	</div>
 
-<a href="information.html"><button id="button-information">Information</button></a>
-<a href="Schedule.html"><button id="button-schedule">Schedule</button></a>
-<a href="qr.html"><button id="button-qrcode">QR code</button></a>
-<a href="map.html"><button id="button-map">Map</button></a>
-<a href="security.html"><button id="button-security">Security</button></a>
-
+<a href="information.html"><button class="menu-button" id="button-information">Information</button></a>
+<a href="Schedule.html"><button class="menu-button" id="button-schedule">Schedule</button></a>
+<a href="qr.html"><button class="menu-button" id="button-qrcode">QR code</button></a>
+<a href="map.html"><button class="menu-button" id="button-map">Map</button></a>
+<a href="security.html"><button class="menu-button" id="button-security">Security</button></a>
 <div class="newsfeed container">
 	<h2>News</h2>
 	<div class="news">
@@ -82,6 +81,10 @@
 	</div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+var cw = $('.menu-button').width();
+$('.menu-button').css({'height':cw+'px'});
+</script>
 <script src="js/scripts.js"></script>
 
 </body>

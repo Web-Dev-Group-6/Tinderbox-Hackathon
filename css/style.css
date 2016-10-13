@@ -262,9 +262,6 @@ select {
 #menu-item-4 {
   background-color: #043540;
 }
-#menu-item-4 a {
-  color: #fff9f4;
-}
 .menu-item {
   top:      0;
   left:     0;
@@ -272,6 +269,12 @@ select {
   right:    0;
   text-align: center;
   position: relative;
+}
+.menu-item a {
+  color: #043540;
+}
+#menu-item-4 a {
+  color: #fff9f4;
 }
 .menu-item h3 {
   font-size: 5vw;

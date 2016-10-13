@@ -49,6 +49,14 @@ footer {
 .social-media {
 	text-align: center;
 }
+.backbutton {
+  height: 59px;
+  float: left;
+  background-color: #ffd962;
+  border: none;
+  width: 50%;
+  font-family: "eveleth-regular";
+}
 
 h1 {
 	font-family: "eveleth-regular" !important;
@@ -65,7 +73,9 @@ select {
   padding: 5px 5px 5px 10px;
   margin-bottom: 15px;
 }
-
+.nopadding {
+  padding: 0;
+}
 .form legend{
 	font-family: "eveleth-thin";
 	line-height: 1.5;
@@ -109,12 +119,15 @@ select {
 }
 .headline h1{
 	margin-top: 20px;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 30px;
 }
 .underline {
 	float: right;
-}
-.underline img {
-	width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
 }
 .register-text {
 	text-align: center;
@@ -499,11 +512,11 @@ input:focus, textarea:focus {
 .dropbtn {
     background-color: #043540;
     color: white;
-    padding: 16px;
+    padding: 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    height: 50px;
+    height: 59px;
 }
 
 /* Dropdown button on hover & focus */
@@ -525,8 +538,9 @@ input:focus, textarea:focus {
     background-color: #043540;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top: 50px;
+    top: 59px;
     left: 0;
+    z-index: 3;
 }
 
 /* Links inside the dropdown */
@@ -548,4 +562,5 @@ input:focus, textarea:focus {
 
 .call {
   background-color: red;
+  list-style-type: none;
 }

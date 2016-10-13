@@ -21,7 +21,7 @@
 		<div class="row">
 			<div class="col-xs-4 nopadding">
 				<div class="dropdown">
-			  		<button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+			  		<button onclick="toggleDropdown()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
 			  		<div id="myDropdown" class="dropdown-content">
 			    		<a href="schedule.html">SCHEDULE</a>
 			    		<a href="#">MESSAGES</a>
@@ -31,9 +31,10 @@
 			    		<a href="security.html" class="call">CALL SECURITY</a>
 			  		</div>
 				</div>
+				<button id="back-link" class="backbutton">Back</button>
 			</div>
 			<div class="col-xs-8 nopadding headline">
-				<h1>Tinderbox Volunteer</h1>
+				<h1>Map</h1>
 			</div>
 		</div>
 		<div class="row">
@@ -42,45 +43,6 @@
 			</div>
 		</div>
 	</div>
-
-
-<!--Navigation-->
-
-    <!--<div id="nav" class="container-fluid">
-		<div class="row">
-			<div class="col-xs-6 menu-item" id="menu-item-1">
-				<h3>
-					<a href="schedule.html">Schedule</a>
-				</h3>
-			</div>
-			<div class="col-xs-6 menu-item" id="menu-item-2">
-				<h3>
-					<a href="information.html">Information</a>
-				</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6 menu-item" id="menu-item-3">
-				<h3>
-					<a href="map.html">Map</a>
-				</h3>
-			</div>
-			<div class="col-xs-6 menu-item" id="menu-item-4">
-				<h3>
-					<a href="qr.html">QR codes</a>
-				</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6 menu-item" id="menu-item-5">
-				<h3>
-					<a href="security.html">Security</a>
-				</h3>
-			</div>
-		</div>
-	</div>-->
-
-<!--buttons-->
 
 	<input type="submit" value="Information" id="button-information">
 	<input type="submit" value="Schedule" id="button-schedule">
@@ -124,26 +86,7 @@
 	</div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<script type="text/javascript"> 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (event.target.matches('.dropdown')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

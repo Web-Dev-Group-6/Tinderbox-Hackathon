@@ -473,7 +473,7 @@ input:focus, textarea:focus {
   cursor:pointer;
   background-color: #f18879;
   color:black;
-  font-size:34px;
+  font-size: 5vw;
   padding-top:15px;
   padding-bottom:15px;
   transition: all 0.3s;
@@ -490,7 +490,7 @@ input:focus, textarea:focus {
   cursor:pointer;
   background-color: rgb(139, 199, 185);
   color:black;
-  font-size:34px;
+  font-size: 5vw;
   padding-top:15px;
   padding-bottom:15px;
   transition: all 0.3s;
@@ -507,7 +507,7 @@ input:focus, textarea:focus {
   cursor:pointer;
   background-color: #ffd962;
   color:black;
-  font-size:34px;
+  font-size: 5vw;
   padding-top:15px;
   padding-bottom:15px;
   transition: all 0.3s;
@@ -524,7 +524,7 @@ input:focus, textarea:focus {
   cursor:pointer;
   background-color: #043540;
   color:white;
-  font-size:34px;
+  font-size: 5vw;
   padding-top:15px;
   padding-bottom:15px;
   transition: all 0.3s;
@@ -541,7 +541,7 @@ input:focus, textarea:focus {
   cursor:pointer;
   background-color: #f18879;
   color:black;
-  font-size:34px;
+  font-size: 5vw;
   padding-top:15px;
   padding-bottom:15px;
   transition: all 0.3s;

@@ -81,19 +81,16 @@ select {
 	line-height: 1.5;
 	color: white;
 }
-
 .form p{
 	font-family: "eveleth-thin";
 	line-height: 1.2;
 	color: white;
 }
-
 .form article{
 	font-family: "eveleth-thin";
 	line-height: 0.4;
 	color: white;
 }
-
 #logo {
 	float: left;
 	height: 50px;
@@ -179,6 +176,11 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
+.image-size {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .next {
   background-color: #ffd962;
   float: right;
@@ -198,6 +200,19 @@ select {
   font-family: "eveleth-regular";
   color: #043540;
   margin-bottom: 15px;
+}
+.message-button {
+  width: 100%;
+  margin: 15px 0;
+  height: 50px;
+  border: none;
+  font-family: "eveleth-Regular";
+}
+#group-button {
+  background-color: #ffd962;
+}
+#personal-button {
+  background-color: #8bc7b9;
 }
 .social-media {
 	font-size: 16px;
@@ -314,7 +329,7 @@ select {
   padding-left:35px;
   padding-right:35px;
   padding-top:35px;
-  padding-bottom:50px;
+  padding-bottom:80px;
   width: 450px;
   float: left;
   left: 50%;
@@ -388,7 +403,8 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-color: white;
   border: #fbfbfb solid 2px;
-  border-radius: 12px
+  border-radius: 12px;
+  padding-left: 10px;
 }
 
 #info h2 {
@@ -506,7 +522,7 @@ input:focus, textarea:focus {
     left: 3%;
     margin-right: 3%;
     width: 88%;
-    margin-left: 0;
+    margin-left: 3%;
     padding-left: 3%;
     padding-right: 3%;
   }

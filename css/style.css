@@ -275,9 +275,6 @@ select {
 #menu-item-4 {
   background-color: #043540;
 }
-#menu-item-4 a {
-  color: #fff9f4;
-}
 .menu-item {
   top:      0;
   left:     0;
@@ -285,6 +282,12 @@ select {
   right:    0;
   text-align: center;
   position: relative;
+}
+.menu-item a {
+  color: #043540;
+}
+#menu-item-4 a {
+  color: #fff9f4;
 }
 .menu-item h3 {
   font-size: 5vw;
@@ -563,4 +566,16 @@ input:focus, textarea:focus {
 .call {
   background-color: red;
   list-style-type: none;
+}
+
+.qr-code {
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.social-media span {
+  font-family: "eveleth-thin";
+  font-size: 14px;
 }
